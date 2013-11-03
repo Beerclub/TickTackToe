@@ -1,4 +1,4 @@
-TickTackToe
+TicTacToe
 ===========
 
 Tic-tac-toe is a fun game for two players.
