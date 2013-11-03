@@ -13,7 +13,9 @@ We have to implement the classic paper&pen game "Tic-Tac-Toe".
 The team Beerclub will be implementing and designing the game.
 
 ## Team
-We all love beer, so of course we call our team The Beerclub (and because the BreakfastClub was taken).
+We all love beer, so of course we call our team The Beerclub (and because the Breakfast Club was taken).
+
+<img src="http://i.imgur.com/8soHHef.jpg" alt="stjornin" />
 
 ## License
 We have non
