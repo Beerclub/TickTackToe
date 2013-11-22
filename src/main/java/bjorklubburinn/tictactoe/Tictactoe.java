@@ -40,6 +40,27 @@ public class Tictactoe
 		if (victoryTickTack[0] == victoryTickTack[1] && victoryTickTack[1] == victoryTickTack[2])
 			return true;
 
+		if (victoryTickTack[3] == victoryTickTack[4] && victoryTickTack[4] == victoryTickTack[5])
+			return true;
+
+		if (victoryTickTack[6] == victoryTickTack[7] && victoryTickTack[7] == victoryTickTack[8])
+			return true;
+
+		if (victoryTickTack[0] == victoryTickTack[3] && victoryTickTack[3] == victoryTickTack[6])
+			return true;
+
+		if (victoryTickTack[1] == victoryTickTack[4] && victoryTickTack[4] == victoryTickTack[7])
+			return true;
+
+		if (victoryTickTack[2] == victoryTickTack[5] && victoryTickTack[5] == victoryTickTack[8])
+			return true;
+
+		if (victoryTickTack[0] == victoryTickTack[4] && victoryTickTack[4] == victoryTickTack[8])
+			return true;
+
+		if (victoryTickTack[2] == victoryTickTack[4] && victoryTickTack[4] == victoryTickTack[6])
+			return true;
+
 		return false;
 	}
 
