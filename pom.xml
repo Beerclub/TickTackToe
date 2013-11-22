@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>bjorklubburinn</groupId>
 	<version>1.0-SNAPSHOT</version>
-	<artifactId>TickTackToe</artifactId>
+	<artifactId>Tictactoe</artifactId>
 
 	<dependencies>
     	<dependency>
@@ -14,13 +14,14 @@
       		<version>4.8.1</version>
       		<scope>test</scope>
     	</dependency>
-      
+
       <!-- Spark -->
       <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-core</artifactId>
         <version>1.1.1</version>
-        </dependency>
+      </dependency>
+
   	</dependencies>
 
   	<properties>

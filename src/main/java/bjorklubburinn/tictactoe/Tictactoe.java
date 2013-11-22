@@ -1,6 +1,6 @@
 package bjorklubburinn.tictactoe;
 
-public class Ticktactoe
+public class Tictactoe
 {
 	public static void main(String[] args)
 	{
