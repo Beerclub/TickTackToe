@@ -1,13 +1,20 @@
---- QUIT AND SAVE IN COMMAND MODE ---
-:q	= quit 
+#--- QUIT AND SAVE IN COMMAND MODE ---
+
+:q	= quit
+ 
 :q!	= quti without saving
+
 :wq	= write and quit
-:qa	= quti all
+
+:qa	= quit all
+
 :w	= save
+
 :x 	= save and exit if changes have been made
 
 
---- MODES ---
+
+#--- MODES ---
 esc	= command mode
 i	= insert mode
 I	= moves to beginning of line and goes to insert mode
@@ -17,7 +24,7 @@ a	= moves forward one char and goes into insert mode
 A	= moves to the end of the line and goes to insert mode
 
 
---- MOVE IN COMMAND MODE ---
+#--- MOVE IN COMMAND MODE ---
 j	= move down
 k	= move up
 h	= move left
@@ -33,18 +40,18 @@ w	= move forward to the next word or .
 shi + 4 = go to end of line
 
  
---- COPY/PASTE IN COMMAND MODE ---
+#--- COPY/PASTE IN COMMAND MODE ---
 yy	= copy whole line
 p	= paste in new line
 *p	= (* = number, f.ex. 5p) pastes the copyed line * number of times
 
 
---- TEXT EDITING ---
+#--- TEXT EDITING ---
 J	= join line with the one below it
 .	= repeat last command
 
 
---- DELETE ---
+#--- DELETE ---
 dd	= delete line
 *dd	= same as *p except it delets * number of lines (current and lines below)
 db	= delets one word to the left
