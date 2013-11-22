@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd target
+
+java -cp TickTackToe-1.0-SNAPSHOT-jar-with-dependencies.jar bjorklubburinn.tictactoe.Tictactoe
