@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TictactoeTest
 {
 	@Test
-	public void testresetTickTackArray()
+	public void testResetTickTackArray()
 	{
 		int count = 0;
 
@@ -24,6 +24,34 @@ public class TictactoeTest
 		assertEquals(testTack, Tictactoe.resetTickTackArray());
 	}
 
+
+	// X|X|X
+	// -----
+	//  | |
+	// -----
+	//  | | 
+
+	@Test
+	public void testCheckForVictory012()
+	{
+		int count = 0;
+		String[] testTack = new String[9];
+
+		// Sets tickTack array to default settings.
+		for (int i = 0; i < 9; i++)
+		{
+				// Adds a html radio button to every positon of the array.
+				// count adds a different value to each radio button so each button has a different value.
+				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+				count++;
+		}
+
+		testTack[0] = "X";
+		testTack[1] = "X";
+		testTack[2] = "X";
+
+		assertEquals(true, Tictactoe.checkForVictory(testTack));
+	}
 
 
 }

@@ -7,16 +7,20 @@ public class Tictactoe
 {
 	// Stores the values of the tictactoe table.
 	// Will be displayed in a html table.
+	// Initialized by resetTickTackArray().
 	public static String[] tickTack;
 
 	// This counter determines whether it is X or Os turn.
-	public static int turnCounter = 0;
+	// Initialized by resetTickTackArray().
+	public static int turnCounter;
 
 	// Resets tickTack so it only contains radio buttons used in html.
 	public static String[] resetTickTackArray()
 	{
-		int count = 0;
+		// if turnCounter starts at 0, X will make the first move.
+		turnCounter = 0;
 
+		int count = 0;
 		String[] tempTack = new String[9];
 
 		// Sets tickTack array to default settings.
@@ -29,6 +33,14 @@ public class Tictactoe
 		}
 
 		return tempTack;
+	}
+
+	public static boolean checkForVictory(String[] victoryTickTack)
+	{
+		if (victoryTickTack[0] == victoryTickTack[1] && victoryTickTack[1] == victoryTickTack[2])
+			return true;
+
+		return false;
 	}
 
 
@@ -93,6 +105,9 @@ public class Tictactoe
 				
 						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />")
 						.append("<a href=\"http://localhost:4567/reset\">Reset game</a>");
+
+						if (checkForVictory(tickTack))
+						output.append("<h1>WINNER!</h1>");
 
 	       		return output;
 	      	} 
