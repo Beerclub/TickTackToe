@@ -37,7 +37,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>comp.hellospark.HelloSpark</mainClass>
+              <mainClass>bjorklubburinn.tictactoe.Tictactoe</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
