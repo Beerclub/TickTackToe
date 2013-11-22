@@ -10,21 +10,20 @@ public class TictactoeTest
 	{
 		int count = 0;
 
-		String[][] testTack = new String[3][3];
+		String[] testTack = new String[9];
 
-		// Sets tickTack array to default settings
-		for (int i = 0; i < 3; i++)
+		// Sets tickTack array to default settings.
+		for (int i = 0; i < 9; i++)
 		{
-			for (int j = 0; j < 3; j++)
-			{
 				// Adds a html radio button to every positon of the array.
 				// count adds a different value to each radio button so each button has a different value.
-				testTack[i][j] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
 				count++;
-			}
 		}
 
 		assertEquals(testTack, Tictactoe.resetTickTackArray());
 	}
+
+
 
 }
