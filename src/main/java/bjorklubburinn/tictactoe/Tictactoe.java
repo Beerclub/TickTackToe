@@ -7,22 +7,35 @@ public class Tictactoe
 {
 	// Stores the values of the tictactoe table
 	// Will be displayed in a html table
-	public static String[][] tickTack = new String[3][3];
+	public static String[][] tickTack;
 
-	public static void main(String[] args)
+	// Resets tickTack so it only contains radio buttons
+	public static String[][] resetTickTackArray()
 	{
 		int count = 0;
 
-		// Adds a html radio button to every positon of the array.
-		// count adds a different value to each radio button so each button has a different value.
+		String[][] tempTack = new String[3][3];
+
+		// Sets tickTack array to default settings
 		for (int i = 0; i < 3; i++)
 		{
 			for (int j = 0; j < 3; j++)
 			{
-				tickTack[i][j] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+				// Adds a html radio button to every positon of the array.
+				// count adds a different value to each radio button so each button has a different value.
+				tempTack[i][j] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
 				count++;
 			}
 		}
+
+		return tempTack;
+	}
+
+
+	public static void main(String[] args)
+	{
+		
+		tickTack = resetTickTackArray();
 
 		// Default homepage
 		get(new Route("/") 
@@ -76,9 +89,9 @@ public class Tictactoe
 						.append("<td>" + tickTack[2][2] + "</td>")
 						.append("</tr>")
 						.append("</table>")
-						.append("</form>");
+						.append("</form>")
 				
-						.append("<input type=\"submit\" value=\"Choose\" 	form=\"tick-submit\" />");
+						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />");
 
 	       		return output;
 	      	} 
