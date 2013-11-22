@@ -91,7 +91,8 @@ public class Tictactoe
 						.append("</table>")
 						.append("</form>")
 				
-						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />");
+						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />")
+						.append("<a href=\"http://localhost:4567/reset\">Reset game</a>");
 
 	       		return output;
 	      	} 
@@ -127,5 +128,16 @@ public class Tictactoe
 			}
 		});
 
+		// This request resets the game board
+		get(new Route("/reset") 
+	  	{
+	     	@Override
+	      	public Object handle(Request request, Response response) 
+	      	{
+	      		tickTack = resetTickTackArray();
+	      		response.redirect("/tick");	
+	       		return "";
+	      	} 
+	 	});
 	}
 }
