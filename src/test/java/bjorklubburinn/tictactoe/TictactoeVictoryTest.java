@@ -20,10 +20,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[0] = "X";
@@ -49,10 +49,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[3] = "X";
@@ -78,10 +78,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[6] = "X";
@@ -107,10 +107,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[0] = "X";
@@ -136,10 +136,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[1] = "X";
@@ -165,10 +165,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[2] = "X";
@@ -194,10 +194,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[0] = "X";
@@ -222,10 +222,10 @@ public class TictactoeVictoryTest
 		// Sets tickTack array to default settings.
 		for (int i = 0; i < 9; i++)
 		{
-				// Adds a html radio button to every positon of the array.
-				// count adds a different value to each radio button so each button has a different value.
-				testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
-				count++;
+			// Adds a html radio button to every positon of the array.
+			// count adds a different value to each radio button so each button has a different value.
+			testTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+			count++;
 		}
 
 		testTack[2] = "X";
