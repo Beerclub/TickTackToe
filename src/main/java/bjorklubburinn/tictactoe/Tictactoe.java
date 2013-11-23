@@ -5,6 +5,7 @@ import spark.*;
 
 public class Tictactoe
 {
+
 	// Stores the values of the tictactoe table.
 	// Will be displayed in a html table.
 	// Initialized by resetTickTackArray().
@@ -76,7 +77,6 @@ public class Tictactoe
 		return victoryTickTack;
 	}
 
-
 	public static void main(String[] args)
 	{
 		// setting tickTack to a default setting.
@@ -122,6 +122,13 @@ public class Tictactoe
 	      			removeButtonsIfVictory(tickTack);
 				
 				output.append("<form id='tick-submit' method='POST' action='/tick'>")
+						
+						// Css start
+						.append("<style>")
+						.append("table{width:200px;height:200px}")
+						.append("td{text-align:center; vertical-align:middle}")
+						.append("</style>")
+						// Css end
 
 						.append("<table border=\"1\"><tr>")
 						.append("<td>" + tickTack[0] + "</td>")

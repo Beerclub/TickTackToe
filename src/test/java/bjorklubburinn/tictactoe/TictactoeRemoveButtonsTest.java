@@ -145,7 +145,4 @@ public class TictactoeRemoveButtonsTest
 		assertEquals(outputTestTack, Tictactoe.removeButtonsIfVictory(testTack));
 
 	}
-
-
-
 }
