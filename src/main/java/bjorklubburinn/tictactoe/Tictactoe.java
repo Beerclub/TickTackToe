@@ -35,7 +35,7 @@ public class Tictactoe
 		return tempTack;
 	}
 
-	// Checks for winning states in the tickTack array
+	// Checks for all possible winning states in the tickTack array
 	public static boolean checkForVictory(String[] victoryTickTack)
 	{
 		if (victoryTickTack[0] == victoryTickTack[1] && victoryTickTack[1] == victoryTickTack[2])
