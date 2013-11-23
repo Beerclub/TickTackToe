@@ -100,9 +100,11 @@ public class Tictactoe
 						.append("</head>")
 						.append("<body>")
 						.append("<h1>Welcome to this Java Spark test site</h1>")
-						.append("<p>This is still a work in progress</p>")
 						.append("<a href='http://localhost:4567/tick'>")
-						.append("<img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'></a>")
+						.append("<img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'</a>")
+						.append("<form action='http://localhost:4567/tick'>")
+						.append("<input type='submit' value='Play'>")
+						.append("</form>")
 						.append("</body>")
 						.append("</html>");
 
@@ -129,7 +131,7 @@ public class Tictactoe
 						.append("body { text-align:center; vertical-align:middle }")
 						.append("table{width:200px;height:200px}")
 						.append("td{text-align:center; vertical-align:middle}")
-						.append("table{width:200px; height:200px; border='1'}")
+						.append("table{margin-left:auto; margin-right:auto;width:200px; height:200px; border='1'}")
 						.append("td{height:60px; width:60px; text-align:center; vertical-align:middle}")
 						.append("</style>")
 						// Css end
@@ -153,7 +155,10 @@ public class Tictactoe
 						.append("</form>")
 				
 						.append("<input type='submit' value='Choose' form='tick-submit' />")
-						.append("<a href='http://localhost:4567/reset'>Reset game</a>");
+						.append("<form action='http://localhost:4567/reset'>")
+						.append("<input type='submit' value='Reset game'>")
+						.append("</form>");
+
 
 				if (checkForVictory(tickTack))
 					output.append("<h1>WINNER!</h1>");
