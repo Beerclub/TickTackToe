@@ -126,6 +126,7 @@ public class Tictactoe
 						
 						// Css start
 						.append("<style>")
+						.append("body { text-align:center; vertical-align:middle }")
 						.append("table{width:200px;height:200px}")
 						.append("td{text-align:center; vertical-align:middle}")
 						.append("</style>")
