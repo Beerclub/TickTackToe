@@ -41,11 +41,11 @@ public class TictactoeRemoveButtonsTest
 
 		outputTestTack[3] = "O";
 		outputTestTack[4] = "O";
-		outputTestTack[5] = "";
+		outputTestTack[5] = "-";
 
-		outputTestTack[6] = "";
-		outputTestTack[7] = "";
-		outputTestTack[8] = "";
+		outputTestTack[6] = "-";
+		outputTestTack[7] = "-";
+		outputTestTack[8] = "-";
 
 		assertEquals(outputTestTack, Tictactoe.removeButtonsIfVictory(testTack));
 
@@ -82,15 +82,15 @@ public class TictactoeRemoveButtonsTest
 		String[] outputTestTack = new String[9];
 		outputTestTack[0] = "O";
 		outputTestTack[1] = "O";
-		outputTestTack[2] = "";
+		outputTestTack[2] = "-";
 
 		outputTestTack[3] = "X";
 		outputTestTack[4] = "X";
 		outputTestTack[5] = "X";
 
-		outputTestTack[6] = "";
-		outputTestTack[7] = "";
-		outputTestTack[8] = "";
+		outputTestTack[6] = "-";
+		outputTestTack[7] = "-";
+		outputTestTack[8] = "-";
 
 		assertEquals(outputTestTack, Tictactoe.removeButtonsIfVictory(testTack));
 
@@ -134,12 +134,12 @@ public class TictactoeRemoveButtonsTest
 		outputTestTack[1] = "O";
 		outputTestTack[2] = "X";
 
-		outputTestTack[3] = "";
+		outputTestTack[3] = "-";
 		outputTestTack[4] = "O";
 		outputTestTack[5] = "X";
 
 		outputTestTack[6] = "O";
-		outputTestTack[7] = "";
+		outputTestTack[7] = "-";
 		outputTestTack[8] = "X";
 
 		assertEquals(outputTestTack, Tictactoe.removeButtonsIfVictory(testTack));
