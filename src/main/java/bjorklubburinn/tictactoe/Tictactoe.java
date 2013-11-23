@@ -29,7 +29,7 @@ public class Tictactoe
 		{
 				// Adds a html radio button to every positon of the array.
 				// count adds a different value to each radio button so each button has a different value.
-				tempTack[i] = "<input type=\"radio\" name=\"boardValues\" value=\"" + count + "\">";
+				tempTack[i] = "<input type='radio' name='boardValues' value='' + count + "\">";
 				count++;
 		}
 
@@ -101,8 +101,12 @@ public class Tictactoe
 						.append("<body>")
 						.append("<h1>Welcome to this Java Spark test site</h1>")
 						.append("<p>This is still a work in progress</p>")
+<<<<<<< HEAD
+						.append("<a href='http://localhost:4567/tick'>Play TickTackToe</a>")
+=======
 						.append("<a href='http://localhost:4567/tick'>")
 						.append("<img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'></a>")
+>>>>>>> 48aeaf32462578e91908c317b13ef82b6c0c2710
 						.append("</body>")
 						.append("</html>");
 
@@ -126,13 +130,18 @@ public class Tictactoe
 						
 						// Css start
 						.append("<style>")
+<<<<<<< HEAD
 						.append("body { text-align:center; vertical-align:middle }")
 						.append("table{width:200px;height:200px}")
 						.append("td{text-align:center; vertical-align:middle}")
+=======
+						.append("table{width:200px; height:200px; border='1'}")
+						.append("td{height:60px; width:60px; text-align:center; vertical-align:middle}")
+>>>>>>> 9fdc3fcb34516120d5fff070a727b90edaca0dfd
 						.append("</style>")
 						// Css end
 
-						.append("<table border=\"1\"><tr>")
+						.append("<table border='1'><tr>")
 						.append("<td>" + tickTack[0] + "</td>")
 						.append("<td>" + tickTack[1] + "</td>")
 						.append("<td>" + tickTack[2] + "</td>")
@@ -150,8 +159,8 @@ public class Tictactoe
 						.append("</table>")
 						.append("</form>")
 				
-						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />")
-						.append("<a href=\"http://localhost:4567/reset\">Reset game</a>");
+						.append("<input type='submit' value='Choose' form='tick-submit' />")
+						.append("<a href='http://localhost:4567/reset'>Reset game</a>");
 
 				if (checkForVictory(tickTack))
 					output.append("<h1>WINNER!</h1>");
