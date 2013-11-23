@@ -90,16 +90,19 @@ public class Tictactoe
 	      	{
 	      		// A string that will store a html code that will be viewed when "/" is requested.
 	      		StringBuilder welcome = new StringBuilder();
-
 	      		welcome.append("<DOCTYPE!>")
 						.append("<html>")
 						.append("<head>")
 						.append("<title>TickTackToe</title>")
+		      			.append("<style>")
+		      			.append("body { text-align:center; }")
+		      			.append("</style>")
 						.append("</head>")
 						.append("<body>")
 						.append("<h1>Welcome to this Java Spark test site</h1>")
 						.append("<p>This is still a work in progress</p>")
-						.append("<a href=\"http://localhost:4567/tick\">Play TickTackToe</a>")
+						.append("<a href='http://localhost:4567/tick'>")
+						.append("<img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'></a>")
 						.append("</body>")
 						.append("</html>");
 
@@ -123,12 +126,15 @@ public class Tictactoe
 						
 						// Css start
 						.append("<style>")
+						.append("body { text-align:center; vertical-align:middle }")
 						.append("table{width:200px;height:200px}")
 						.append("td{text-align:center; vertical-align:middle}")
+						.append("table{width:200px; height:200px; border='1'}")
+						.append("td{height:60px; width:60px; text-align:center; vertical-align:middle}")
 						.append("</style>")
 						// Css end
 
-						.append("<table border=\"1\"><tr>")
+						.append("<table border='1'><tr>")
 						.append("<td>" + tickTack[0] + "</td>")
 						.append("<td>" + tickTack[1] + "</td>")
 						.append("<td>" + tickTack[2] + "</td>")
@@ -146,8 +152,8 @@ public class Tictactoe
 						.append("</table>")
 						.append("</form>")
 				
-						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />")
-						.append("<a href=\"http://localhost:4567/reset\">Reset game</a>");
+						.append("<input type='submit' value='Choose' form='tick-submit' />")
+						.append("<a href='http://localhost:4567/reset'>Reset game</a>");
 
 				if (checkForVictory(tickTack))
 					output.append("<h1>WINNER!</h1>");
