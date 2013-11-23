@@ -23,8 +23,4 @@ public class TictactoeTest
 
 		assertEquals(testTack, Tictactoe.resetTickTackArray());
 	}
-
-
-
-
 }
