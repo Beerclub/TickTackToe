@@ -1,11 +1,9 @@
 language: java
-install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true
-script: mvn test -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7
-
--deploy:
- -  provider: heroku
- -  api_key:
- -    secure: DQIsC9sTfU4OCjHKTw8UueMQ2PY9fvADUcRfwKEM4dS5Mh8nZ4jCiqjKeOcaFvyal9mKvOhqdQVbYdr46t8vyw4E+iqf/WxgHRTncXJGG/Kq2nAhUlXMhygRJd399OXMkMzGk2Cf+aY/mScZUKBi813ZyRLqCgOceS9kL4D93ks=
- -  app: staging-tictactoe1
- -  on:
- -    repo: Beerclub/TickTackToe
+jdk: openjdk7
+deploy:
+  provider: heroku
+  api_key:
+    secure: fJQqSSks7ufCuIbpvf+/9K2TBtkySfXPfXiKH+bC8I6AW2YAgG1Cj2KQOf12nS9OcgKiF0Y0zjRf72Fej9QEq2APu5HZmTkIYwoaUBT2YGs1XZ6EtuArl+vIQfg5VnUD7V4X9E9/3RV5NTiSfdXXpAI0bRswuU2seiY8xXhO48c=
+  app: staging-tic
+  on:
+    repo: Beerclub/TickTackToe
