@@ -35,6 +35,7 @@ public class Tictactoe
 		return tempTack;
 	}
 
+	// Checks for winning states in the tickTack array
 	public static boolean checkForVictory(String[] victoryTickTack)
 	{
 		if (victoryTickTack[0] == victoryTickTack[1] && victoryTickTack[1] == victoryTickTack[2])
@@ -62,6 +63,17 @@ public class Tictactoe
 			return true;
 
 		return false;
+	}
+	// When a victory is triggerted this function will remove all radio buttons from the array.
+	public static String[] removeButtonsIfVictory(String[] victoryTickTack)
+	{
+		for (int i = 0; i < victoryTickTack.length; i++)
+		{
+			if (victoryTickTack[i] != "X" && victoryTickTack[i] != "O")
+				victoryTickTack[i] = "";
+		}
+
+		return victoryTickTack;
 	}
 
 
@@ -103,6 +115,9 @@ public class Tictactoe
 	      	{
 	      		// A string that will store a html code that will be viewed when "/tick" is requested.
 	      		StringBuilder output = new StringBuilder();
+
+	      		if (checkForVictory(tickTack))
+	      			removeButtonsIfVictory(tickTack);
 				
 				output.append("<form id='tick-submit' method='POST' action='/tick'>")
 
@@ -127,8 +142,12 @@ public class Tictactoe
 						.append("<input type=\"submit\" value=\"Choose\" form=\"tick-submit\" />")
 						.append("<a href=\"http://localhost:4567/reset\">Reset game</a>");
 
-						if (checkForVictory(tickTack))
-						output.append("<h1>WINNER!</h1>");
+				if (checkForVictory(tickTack))
+					output.append("<h1>WINNER!</h1>");
+
+				if (!checkForVictory(tickTack) && turnCounter == 9)
+					output.append("<h1>TIE!</h1>");
+
 
 	       		return output;
 	      	} 
