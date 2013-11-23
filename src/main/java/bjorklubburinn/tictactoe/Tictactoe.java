@@ -90,16 +90,18 @@ public class Tictactoe
 	      	{
 	      		// A string that will store a html code that will be viewed when "/" is requested.
 	      		StringBuilder welcome = new StringBuilder();
-
 	      		welcome.append("<DOCTYPE!>")
 						.append("<html>")
 						.append("<head>")
 						.append("<title>TickTackToe</title>")
+		      			.append("<style>")
+		      			.append("body { background-color: #B0B0B0; text-align:center; }")
+		      			.append("</style>")
 						.append("</head>")
 						.append("<body>")
 						.append("<h1>Welcome to this Java Spark test site</h1>")
 						.append("<p>This is still a work in progress</p>")
-						.append("<a href=\"http://localhost:4567/tick\">Play TickTackToe</a>")
+						.append("<a href='http://localhost:4567/tick'> <img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'>Play TickTackToe</a>")
 						.append("</body>")
 						.append("</html>");
 
