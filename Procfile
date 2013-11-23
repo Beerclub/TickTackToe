@@ -1,1 +1,1 @@
-web: java -cp target/tictactoe-1.0-SNAPSHOT-jar-with-dependencies.jar bjorklubburinn.tictactoe.Tictactoe
+web: java -cp target/classes:"target/dependency/*" Tictactoe
