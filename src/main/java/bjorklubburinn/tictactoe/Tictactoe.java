@@ -123,6 +123,8 @@ public class Tictactoe
 
 	      		if (checkForVictory(tickTack))
 	      			removeButtonsIfVictory(tickTack);
+
+
 				
 				output.append("<form id='tick-submit' method='POST' action='/tick'>")
 						
@@ -152,6 +154,7 @@ public class Tictactoe
 						.append("<td>" + tickTack[8] + "</td>")
 						.append("</tr>")
 						.append("</table>")
+<<<<<<< HEAD
 						.append("</form>")
 				
 						.append("<input type='submit' value='Choose' form='tick-submit' />")
@@ -159,6 +162,12 @@ public class Tictactoe
 						.append("<input type='submit' value='Reset game'>")
 						.append("</form>");
 
+=======
+						.append("</form>");
+						if (!checkForVictory(tickTack) && turnCounter < 9)
+							output.append("<input type='submit' value='Choose' form='tick-submit' />");
+						output.append("<a href='http://localhost:4567/reset'>Reset game</a>");
+>>>>>>> 266ed33c20e8ed2699cba604aded6479f140d7ae
 
 				if (checkForVictory(tickTack))
 					output.append("<h1>WINNER!</h1>");
