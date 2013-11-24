@@ -65,7 +65,7 @@ public class Tictactoe
 
 		return false;
 	}
-	// When a victory is triggerted this function will remove all radio buttons from the array.
+	// When a victory is triggered this function will remove all radio buttons from the array.
 	public static String[] removeButtonsIfVictory(String[] victoryTickTack)
 	{
 		for (int i = 0; i < victoryTickTack.length; i++)
