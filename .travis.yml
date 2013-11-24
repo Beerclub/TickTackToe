@@ -1,9 +1,27 @@
 language: java
 jdk: openjdk7
+
+env:
+  global:
+    secure: j3HZHPGHCyRmZtL5gPC5UuKfo1ZFhG7cnY7xf9EN9PecLCNtdGEZ+5nOjtIVsy8MFlDS5QsCp6urSvYr97y70aP5am7OdRM22ROw/mmxRrTRaGDzEqe14AmGEB5nXSE/WHUxnvYvLRSLglYMDr/a5yDZweC79921MlsSPYyZ53Q=
+
 deploy:
   provider: heroku
-  api_key:
+  api_key: 
     secure: fJQqSSks7ufCuIbpvf+/9K2TBtkySfXPfXiKH+bC8I6AW2YAgG1Cj2KQOf12nS9OcgKiF0Y0zjRf72Fej9QEq2APu5HZmTkIYwoaUBT2YGs1XZ6EtuArl+vIQfg5VnUD7V4X9E9/3RV5NTiSfdXXpAI0bRswuU2seiY8xXhO48c=
-  app: staging-tic
+  app: 
+   master: staging-tic
   on:
     repo: Beerclub/TickTackToe
+
+
+before_install:
+ - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+ - git remote add heroku git@heroku.com:staging-tic.git
+ - echo "Host heroku.com" >> ~/.ssh/config
+ - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+ - echo "   CheckHostIP no" >> ~/.ssh/config
+ - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+ - yes | heroku keys:add
+ - yes | git push -f stagin master
+

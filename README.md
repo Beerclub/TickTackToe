@@ -20,4 +20,4 @@ We all love beer, so of course we call our team The Beerclub (and because the Br
 <img src="http://i.imgur.com/rK3KOEN.jpg alt="stjornin" />
 
 ## License
-We have non
+to kill.
