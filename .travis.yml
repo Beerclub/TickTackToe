@@ -3,7 +3,7 @@ jdk: openjdk7
 
 env:
   global:
-    secure: j3HZHPGHCyRmZtL5gPC5UuKfo1ZFhG7cnY7xf9EN9PecLCNtdGEZ+5nOjtIVsy8MFlDS5QsCp6urSvYr97y70aP5am7OdRM22ROw/mmxRrTRaGDzEqe14AmGEB5nXSE/WHUxnvYvLRSLglYMDr/a5yDZweC79921MlsSPYyZ53Q=
+  - secure: j3HZHPGHCyRmZtL5gPC5UuKfo1ZFhG7cnY7xf9EN9PecLCNtdGEZ+5nOjtIVsy8MFlDS5QsCp6urSvYr97y70aP5am7OdRM22ROw/mmxRrTRaGDzEqe14AmGEB5nXSE/WHUxnvYvLRSLglYMDr/a5yDZweC79921MlsSPYyZ53Q=
 
 deploy:
   provider: heroku
