@@ -1,4 +1,7 @@
 # Tictactoe
+
+[![Build Status](https://travis-
+           ci.org/[Beerclub]/[TickTackToe)
 ===========
 
 ## The Game
