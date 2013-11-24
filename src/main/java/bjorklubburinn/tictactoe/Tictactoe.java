@@ -146,20 +146,20 @@ public class Tictactoe
 						.append("</style>")
 						// Css end
 
-						.append("<table border='1'><tr>")
-						.append("<td>" + tickTack[0] + "</td>")
-						.append("<td>" + tickTack[1] + "</td>")
-						.append("<td>" + tickTack[2] + "</td>")
+						.append("<table id='ticktacktoetable' border='1'><tr id='r1'>")
+						.append("<td id='c0'>" + tickTack[0] + "</td>")
+						.append("<td id='c1'>" + tickTack[1] + "</td>")
+						.append("<td id='c2'>" + tickTack[2] + "</td>")
 						.append("</tr>")
-						.append("<tr>")
-						.append("<td>" + tickTack[3] + "</td>")
-						.append("<td>" + tickTack[4] + "</td>")
-						.append("<td>" + tickTack[5] + "</td>")
+						.append("<tr id='r2'>")
+						.append("<td id='c3'>" + tickTack[3] + "</td>")
+						.append("<td id='c4'>" + tickTack[4] + "</td>")
+						.append("<td id='c5'>" + tickTack[5] + "</td>")
 						.append("</tr>")
-						.append("<tr>")
-						.append("<td>" + tickTack[6] + "</td>")
-						.append("<td>" + tickTack[7] + "</td>")
-						.append("<td>" + tickTack[8] + "</td>")
+						.append("<tr id='r3'>")
+						.append("<td id='c6'>" + tickTack[6] + "</td>")
+						.append("<td id='c7'>" + tickTack[7] + "</td>")
+						.append("<td id='c8'>" + tickTack[8] + "</td>")
 						.append("</tr>")
 						.append("</table>")
 						.append("</form>");
@@ -169,9 +169,10 @@ public class Tictactoe
 						.append("<input type='submit' value='Reset game'>")
 						.append("</form>");
 
-				if (checkForVictory(tickTack))
-					output.append("<h1>WINNER!</h1>");
-
+				if (checkForVictory(tickTack) && turnCounter % 2 == 0)
+					output.append("<h1>O IS THE WINNER!</h1>");
+				if (checkForVictory(tickTack) && turnCounter % 2 == 1)
+					output.append("<h1>X IS THE WINNER!</h1>");
 				if (!checkForVictory(tickTack) && turnCounter == 9)
 					output.append("<h1>TIE!</h1>");
 

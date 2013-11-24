@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TictactoeIT
+public class frontpageIT
 {	
 	private WebDriver driver;
 	private String baseUrl;
@@ -20,15 +20,39 @@ public class TictactoeIT
   	public void setUp() throws Exception 
   	{
 	    driver = new FirefoxDriver();
-	    baseUrl = System.getenv("STAGING_SERVER");
+	    baseUrl = "http://localhost:4567/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   	}
 
   	@Test
-	public void testTitle() throws Exception
+	public void frontpageIT() throws Exception
 	{
 		driver.get("localhost:4567");
 		assertEquals("TickTackToe", driver.getTitle());
+		try 
+		{
+      		assertEquals("Welcome to this Java Spark test site", driver.findElement(By.cssSelector("h1")).getText());
+    	} 
+    	catch (Error e) 
+    	{
+      		verificationErrors.append(e.toString());
+    	}
+    	try 
+    	{
+      		assertTrue(isElementPresent(By.cssSelector("img")));
+    	} 
+    	catch (Error e) 
+    	{
+      		verificationErrors.append(e.toString());
+    	}
+    	try 
+    	{
+      		assertTrue(isElementPresent(By.cssSelector("input")));
+    	} 
+    	catch (Error e) 
+    	{
+      	verificationErrors.append(e.toString());
+    	}
 	}
 
 	@After
