@@ -1,8 +1,6 @@
-# Tictactoe
+[![Build Status](https://travis-ci.org/Beerclub/TickTackToe.png)](https://travis-ci.org/Beerclub/TickTackToe) 
 
-[![Build Status](https://travis-ci.org/[Beerclub]/[TickTackToe)]
-           
-           
+# Tictactoe
 ===========
 
 ## The Game
@@ -17,9 +15,9 @@ We have to implement the classic paper&pen game "Tic-Tac-Toe".
 The team Beerclub will be implementing and designing the game.
 
 ## Team
-We all love beer, so of course we call our team The Beerclub (and because the Breakfast Club was taken).
+We all love beer, so of course we call our team The Beerclub (and because the Breakfast Club was taken). The team members are: AngryVolcano, aslaugsollilja (aslaugg12), bjarniegill, einarke12 and krissi92  
 
-<img src="http://i.imgur.com/8soHHef.jpg" alt="stjornin" />
+<img src="http://i.imgur.com/rK3KOEN.jpg alt="stjornin" />
 
 ## License
 We have non
