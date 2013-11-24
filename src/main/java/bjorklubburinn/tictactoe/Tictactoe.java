@@ -79,7 +79,7 @@ public class Tictactoe
 
 	public static void main(String[] args)
 	{
-		
+
 		if (System.getenv("PORT") == null)
             setPort(4567);
         
@@ -108,9 +108,9 @@ public class Tictactoe
 						.append("</head>")
 						.append("<body>")
 						.append("<h1>Welcome to this Java Spark test site</h1>")
-						.append("<a href='http://localhost:4567/tick'>")
+						.append("<a href='/tick'>")
 						.append("<img src='http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif'</a>")
-						.append("<form action='http://localhost:4567/tick'>")
+						.append("<form action='/tick'>")
 						.append("<input type='submit' value='Play'>")
 						.append("</form>")
 						.append("</body>")
@@ -165,7 +165,7 @@ public class Tictactoe
 						.append("</form>");
 						if (!checkForVictory(tickTack) && turnCounter < 9)
 							output.append("<input type='submit' value='Choose' form='tick-submit' />");
-				  output.append("<form action='http://localhost:4567/reset'>")
+				  output.append("<form action='/reset'>")
 						.append("<input type='submit' value='Reset game'>")
 						.append("</form>");
 
