@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Beerclub/TickTackToe.png)](https://travis-ci.org/Beerclub/TicTackToe) 
+[![Build Status](https://travis-ci.org/Beerclub/TickTackToe.png)](https://travis-ci.org/Beerclub/TickTackToe) 
 
 # Tictactoe
 ===========
