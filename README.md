@@ -1,4 +1,4 @@
-# TicTacToe
+# Tictactoe
 ===========
 
 ## The Game
