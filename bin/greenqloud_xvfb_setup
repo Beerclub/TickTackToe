@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get Xvfb and Firefox
+sudo apt-get install -y xvfb firefox
+
+# Install Xvfb packages
+sudo apt-get install -y xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
