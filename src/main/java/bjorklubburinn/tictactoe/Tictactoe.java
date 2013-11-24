@@ -79,6 +79,14 @@ public class Tictactoe
 
 	public static void main(String[] args)
 	{
+		
+		if (System.getenv("PORT") == null)
+            setPort(4567);
+        
+        else 
+            setPort(Integer.valueOf(System.getenv("PORT")));
+
+
 		// setting tickTack to a default setting.
 		tickTack = resetTickTackArray();
 
@@ -90,7 +98,7 @@ public class Tictactoe
 	      	{
 	      		// A string that will store a html code that will be viewed when "/" is requested.
 	      		StringBuilder welcome = new StringBuilder();
-	      		welcome.append("<DOCTYPE!>")
+	      		welcome.append("<DOCTYPE!>")	
 						.append("<html>")
 						.append("<head>")
 						.append("<title>TickTackToe</title>")
