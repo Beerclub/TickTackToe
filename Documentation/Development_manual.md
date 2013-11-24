@@ -11,9 +11,13 @@ aðgangur að github, geta sótt kóðann, kunna á þær script-ur sem eru í g
 hann þarf að setja upp github client, hann þarf að setja upp maven, það þarf að vera einhver ákveðin útgáfa af java
 lýsa öllu þessu
 
-Documenting 
+Install the Heroku toolbelt:
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
- All the code is written in Java, if you are not familiar with that scripting language, you can read about the syntax and get familiarized with it here: http://docs.oracle.com/javase/tutorial/.
+Install ruby1.9.1-dev and update make
+sudo apt-get install -y make ruby1.9.1-dev
 
-All the documentation is written in the text editor Vim through terminal. You can find vim commands tutorial written by the team member Bjarni here: https://github.com/Beerclub/TickTackToe/blob/master/Vim_commands.md. All the documentation is saved in the folder TicTacToe/Documentation folder.
+Use gem1.9.1 to install travis
+sudo gem1.9.1 install travis 
 
+All our tests are saved in TicTacToe/src/test/java/bjorklubburinn/tictactoe/ folder. 
