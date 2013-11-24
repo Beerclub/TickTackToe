@@ -1,8 +1,6 @@
-# Tictactoe
+[![Build Status](https://travis-ci.org/Beerclub/TickTackToe.png)](https://travis-ci.org/Beerclub/TicTacToe) 
 
-[![Build Status](https://travis-ci.org/[Beerclub]/[TickTackToe)]
-           
-           
+# Tictactoe
 ===========
 
 ## The Game
